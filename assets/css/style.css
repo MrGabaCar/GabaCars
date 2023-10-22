@@ -231,6 +231,16 @@ nav.navbar.bootsnav .navbar-toggle i{color: #4e4ffa;}
     text-transform: uppercase;
     margin-bottom: 45px;
 }
+
+.service-title-txt{text-align: center;padding:0px 0 25px;}
+.service-title-txt h2 {
+    font-size: 35px;
+    color: black;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 45px;
+}
+
 .welcome-hero-txt p {
     font-size: 18px;
     text-transform: initial;
@@ -325,7 +335,7 @@ nav.navbar.bootsnav .navbar-toggle i{color: #4e4ffa;}
 /*-------------------------------------
         5. Service 
 --------------------------------------*/
-.service { padding: 260px 0 87px;}
+.service { padding: 150px 0 87px;}
 
 .single-service-item{
     text-align: center;
