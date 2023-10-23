@@ -47,6 +47,33 @@
         <!--responsive.css-->
         <link rel="stylesheet" href="assets/css/responsive.css">
 
+		<style>
+			/* Style for larger screens */
+			@media (min-width: 992px) { /* this value should correspond to when your navbar is no longer collapsed */
+				.navbar-header a[href*="your-facebook-link"],
+				.navbar-header a[href*="your-instagram-link"],
+				.navbar-header a[href*="your-linkedin-link"] {
+					display: inline-block;
+					/* other styles to position your icons properly */
+					margin-left: 20px; /* for space between text and icons */
+					vertical-align: middle; /* to align with the brand text */
+					margin-top: 41px;
+				}
+			}
+		
+			/* Style for smaller screens */
+			@media (max-width: 991px) { /* this value should correspond to when your navbar collapses */
+				.navbar-header a[href*="your-facebook-link"],
+				.navbar-header a[href*="your-instagram-link"],
+				.navbar-header a[href*="your-linkedin-link"] {
+					/* styles to make it look good when navbar is collapsed */
+					display: inline; /* keeps icons in the same line */
+					margin-left: 10px; /* for space between icons */
+				}
+			}
+		</style>
+		
+
     </head>
 	
 	<body>	
@@ -68,6 +95,18 @@
 				                </button>
 				                <a class="navbar-brand" href="index.html">Gaba<span></span></a>
 
+								 <!-- Add some space -->
+    							<span style="margin-left: 20px;"></span>
+
+								<a href="your-facebook-link" target="_blank" style="color: white; margin-left: 10px;">
+									<i class="fa fa-facebook"></i> <!-- This is the Facebook icon -->
+								</a>
+								<a href="your-instagram-link" target="_blank" style="color: white; margin-left: 10px;">
+									<i class="fa fa-instagram"></i> <!-- This is the Instagram icon -->
+								</a>
+								<a href="your-linkedin-link" target="_blank" style="color: white; margin-left: 10px;">
+									<i class="fa fa-linkedin"></i> <!-- This is the LinkedIn icon -->
+								</a>
 				            </div><!--/.navbar-header-->
 				            <!-- End Header Navigation -->
 
@@ -759,7 +798,7 @@
 							<div class="single-footer-widget">
 								<h2>Best in Market</h2>
 								<div class="footer-newsletter">
-									<p>
+									<p style="color: white;">
 										We guarantee that we are the best in this field.
 									</p>
 								</div>
