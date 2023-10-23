@@ -72,6 +72,31 @@
 				}
 			}
 		</style>
+
+		<script>
+			// Function to handle the scroll event
+			function handleScroll() {
+				// Get all the anchor tags for social links
+				var socialLinks = document.querySelectorAll('.navbar-header a[href*="your-facebook-link"], .navbar-header a[href*="your-instagram-link"], .navbar-header a[href*="your-linkedin-link"]');
+
+				// Check if the page has been scrolled down
+				if (window.scrollY > 0) {
+					// If scrolled, remove the margin-top style
+					socialLinks.forEach(function(link) {
+						link.style.marginTop = '25px';
+					});
+				} else {
+					// If at the top, add the margin-top style back
+					socialLinks.forEach(function(link) {
+						link.style.marginTop = '41px';
+					});
+				}
+			}
+
+			// Listen for the scroll event
+			window.addEventListener('scroll', handleScroll);
+		</script>
+
 		
 
     </head>
