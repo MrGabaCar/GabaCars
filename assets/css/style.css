@@ -396,6 +396,11 @@ nav.navbar.bootsnav .navbar-toggle i{color: #4e4ffa;}
     width: 176px;
     margin-top: 32px;
 }
+
+.welcome-btn.contact-btns {
+    width: 250px;
+    margin-top: 32px;
+}
 /*.new-cars-txt*/
 
 /*.owl-dots */
